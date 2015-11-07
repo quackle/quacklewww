@@ -23,9 +23,41 @@ pageTracker._trackPageview();
 </tr>
 </table>
 
+<h2>7 November 2015 &mdash; Quackle Version 1.0 Released</h2>
+
+<p><a href="images/quackle-1.0.png"><img src="images/quackle-1.0-small.png" border="0" alt="Quackle 1.0 screenshot new settings interfaces" /></a></p>
+
+<h4><a name="download">Downloading Quackle 1.0</a></h4>
+<ul>
+<li>Download Quackle for <b>Microsoft Windows</b>: <a href="downloads/quackle-1.0/quackle-1.0.exe" onClick="javascript:pageTracker._trackPageview('downloads/quackle-1.0/quackle-1.0.exe')">quackle-1.0.exe</a></li>
+<li>Download Quackle for <b>Mac OS X</b> (10.8 or later): <a href="downloads/quackle-1.0/quackle-1.0.dmg" onClick="javascript:pageTracker._trackPageview('downloads/quackle-1.0/quackle-1.0.dmg')">quackle-1.0.dmg</a></li>
+<li>Developers and Unix users <b>only</b>:
+<ul><li>Download <a href="https://github.com/quackle/quackle">Quackle source code from GitHub</a> (<a href="https://github.com/quackle/quackle/releases/tag/v1.0">1.0 release</a>)</li></ul>
+</li>
+</ul>
+
+<h4>New Features in Quackle 1.0</h4>
+<ol>
+<li>CSW2015 dictionary</li>
+<li>Ability to create brand new dictionaries.  In the lexicon chooser, scroll to the bottom choice, "Add new lexicon..." and open up a raw word list (.raw, .txt) or a .dawg file</li>
+<li>Ability to edit existing dictionaries.  Next to the lexicon chooser, press the Edit button</li>
+<li>Ability to generate GADDAGs from within the interface.  Click "Build lexicon database..." in the Settings pane to do this.</li>
+<li>All lexicons and configuration files can now be customized and loaded from outside of the layout.  User-created lexica are automatically saved in a preferences directory designated by Qt for Quackle</li>
+<li>New DAWG format.  The new format supports SHA signatures on the dictionary so that you can tell with certainty if you have the dictionary you think you have.</li>
+<li>New GADDAG format.  Uses SHAs to insure that a GADDAG is properly matched to a DAWG.</li>
+<li>GADDAGs and DAWGs are now a versioned format.  So it will be easy to change and upgrade them going forward.</li>
+<li>The lexicon field picked up a copyrights.txt file which detects appropriate dictionaries by their SHAs and automatically decorates them with copyrights.</li>
+<li>Fix up strategy fallbacks.  All English dictionaries will fall back to using TWL06 strategies if they don't have any strategies of their own.  All other dictionaries will fall back to using default strategies (which have rather thin coverage right now).
+<li>Bugs with alphabet lengths were fixed.  Alphabets of >32 letters are now supported.  Which means creating a Slovak version is now possible.</li>
+</ol>
+
+<h4>Contact Quacklers</h4>
+<p>Quackle is brought to you by <a href="http://people.csail.mit.edu/jasonkb/">Jason Katz-Brown</a> (jasonkatzbrown at gmail.com), John O'Laughlin (olaughlin at gmail.com), John Fultz (jfultz at wolfram.com), Matt Liberty (matt.liberty at gmail.com), and Anand Buddhdev (arhbkb at gmail.com).</p>
+<p>If you want to be alerted of future Quackle announcements or join in Quackle's development, please join the <a href="http://games.groups.yahoo.com/group/quackle/">Quackle Yahoo! group</a>.</p>
+
 <h2>29 November 2014 &mdash; Quackle Version 0.98 Released</h2>
 
-<p><a href="images/quackle-0.98.png"><img src="images/quackle-0.98-small.png" border="0" alt="Quackle 0.98 screenshot with new Collins words" /></a></p>
+<p><a href="images/quackle-0.98.png"><img src="images/quackle-0.98-small.png" border="0" alt="Quackle 0.98 screenshot with new OSPS words" /></a></p>
 
 <h4><a name="download">Downloading Quackle 0.98</a></h4>
 <ul>
@@ -46,10 +78,6 @@ pageTracker._trackPageview();
 <li>Better behavior with international keyboards.</li>
 <li>Fixes for OS X Mavericks. (And a lot of other code cleanups by Matt Liberty.)</li>
 </ol>
-
-<h4>Contact Quacklers</h4>
-<p>Quackle is brought to you by <a href="http://people.csail.mit.edu/jasonkb/">Jason Katz-Brown</a> (jasonkatzbrown at gmail.com), John O'Laughlin (olaughlin at gmail.com), John Fultz (jfultz at wolfram.com), Matt Liberty (matt.liberty at gmail.com), and Anand Buddhdev (arhbkb at gmail.com).</p>
-<p>If you want to be alerted of future Quackle announcements or join in Quackle's development, please join the <a href="http://games.groups.yahoo.com/group/quackle/">Quackle Yahoo! group</a>.</p>
 
 
 <h2>2 January 2012 &mdash; Quackle Version 0.97 Released</h2>
