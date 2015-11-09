@@ -43,10 +43,10 @@ pageTracker._trackPageview();
 <li>Ability to edit existing dictionaries.  Next to the lexicon chooser, press the Edit button</li>
 <li>Ability to generate GADDAGs from within the interface.  Click "Build lexicon database..." in the Settings pane to do this.</li>
 <li>All lexicons and configuration files can now be customized and loaded from outside of the layout.  User-created lexica are automatically saved in a preferences directory designated by Qt for Quackle</li>
-<li>New DAWG format.  The new format supports SHA signatures on the dictionary so that you can tell with certainty if you have the dictionary you think you have.</li>
-<li>New GADDAG format.  Uses SHAs to insure that a GADDAG is properly matched to a DAWG.</li>
+<li>New DAWG format.  The new format supports MD5 hashes on the dictionary so that you can tell with certainty if you have the dictionary you think you have.</li>
+<li>New GADDAG format.  Uses MD5 hashes to insure that a GADDAG is properly matched to a DAWG.</li>
 <li>GADDAGs and DAWGs are now a versioned format.  So it will be easy to change and upgrade them going forward.</li>
-<li>The lexicon field picked up a copyrights.txt file which detects appropriate dictionaries by their SHAs and automatically decorates them with copyrights.</li>
+<li>The lexicon field picked up a copyrights.txt file which detects appropriate dictionaries by their hashes and automatically decorates them with copyrights.</li>
 <li>Fix up strategy fallbacks.  All English dictionaries will fall back to using TWL06 strategies if they don't have any strategies of their own.  All other dictionaries will fall back to using default strategies (which have rather thin coverage right now).
 <li>Bugs with alphabet lengths were fixed.  Alphabets of >32 letters are now supported.  Which means creating a Slovak version is now possible.</li>
 </ol>
